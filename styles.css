@@ -1,0 +1,384 @@
+body {
+    /* max-width: 1200px; */
+    position: relative;
+    margin: auto;
+}
+
+.full-page-width {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content-container {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+.menu{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+    display: inline-flex;
+    grid-template-columns: 5% auto auto;
+    box-sizing: border-box;
+    justify-content: left;
+    gap: 35px;
+    padding-inline-start: 5px;
+    margin-bottom: 30px;
+}
+
+.links{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    width: 300px;
+}
+
+@font-face{
+    font-family: 'ikeafont';
+    font-style: normal;
+    src: url(https://www.ikea.com/global/assets/fonts/woff2/noto-ikea-400.latin.16880ce8.woff2) format('woff2');
+}
+
+@font-face{
+    font-family: 'ikeabold';
+    font-style: bold;
+    src: url(https://www.ikea.com/global/assets/fonts/woff2/noto-ikea-700.latin.5d09a799.woff2)
+}
+
+a{
+    font-family:'ikeafont';
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight:bolder;
+}
+
+/* top left container */
+.holiday{
+    display:flex;
+    position: relative;
+}
+
+.stress-container {
+    position: relative;
+    display: flex;
+    width: 50%;
+    cursor: pointer;
+}
+
+.stress {
+    border-radius: 15px;
+    width: auto;
+    height: 600px;
+    display: flex;
+    object-fit: 50%;
+}
+
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    right: 0;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.stress-container:hover .overlay {
+    width: 500px;
+
+}
+
+.stress-text {
+    white-space: nowrap;
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    transform: translate(-55%, -50%);
+}
+
+#distress1 {
+    font-size: 18px;
+    color: white;
+    font-family: 'ikeafont';
+    justify-content: flex-end;
+    position: absolute;
+    top: 5px;
+}
+#distress {
+    font-size: 56px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'ikeabold';
+}
+#arrow{
+    font-size: 125px;
+    color:white;
+    font-weight:bold;
+    font-family: 'ikeafont';
+    position:absolute;
+    left: -100px;
+    top: -60px;
+}
+
+/* right side container */
+.know {
+    position: relative;
+    right: -23%;
+    min-width: 300px;
+    width: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #F9DC4A;
+    font-size: 36px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 600px;
+    cursor: pointer;
+  }
+
+.yayfun{
+    display: inline-block;
+    position:relative;
+    padding-left: 50px;
+    top: 10px;
+    justify-content: end;
+    /* float: center; */
+    transition: transform 0.1s;
+}
+
+.yayfun:hover{
+    transform: scale(1.05);
+    filter:invert(30%);
+}
+
+
+.knows{
+    font-family: 'ikeabold';
+    font-size: 25px;
+}
+
+/* bottom left container */
+.global{
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+}
+
+.jelly{
+    width: 565px;
+    height: 565px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.jelly-container {
+    position: relative;
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+}
+
+.jelly-container:hover .jelly-ov{
+    width: 520px;
+}
+
+.jelly-ov{
+position: absolute;
+bottom: 0;
+left: 125px;
+right: 0;
+width: 0;
+height: 100%;
+transition: .5s ease;
+}
+
+.jelly-text{
+font-family: 'ikeafont';
+color: white;
+white-space: nowrap;
+position: absolute;
+top: 90%;
+left: 20%;
+transform: translate(-55%, -50%);
+}
+
+#fam{
+font-size: 18px;
+color: white;
+font-family: 'ikeafont';
+justify-content: flex-end;
+position: absolute;
+top: 5px;
+}
+
+#fam2{
+font-size: 56px;
+color: white;
+font-weight: bolder;
+font-family: 'ikeabold';
+}
+
+/* bottom right container */
+.quokka{
+    width: 565px;
+    height: 565px;
+    border-radius: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.quokka-container {
+    position: relative;
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+}
+
+.quokka-container:hover .quokka-ov{
+        width: 500px;
+}
+
+.quokka-ov{
+    position: absolute;
+    bottom: 0;
+    left: 180px;
+    right: 0;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.quokka-text{
+    font-family: 'ikeafont';
+    color: white;
+    white-space: nowrap;
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    transform: translate(-70%, -50%);
+}
+
+#daily{
+    font-size: 18px;
+    color: white;
+    font-family: 'ikeafont';
+    justify-content: flex-end;
+    position: absolute;
+    top: 5px;
+}
+
+#daily2{
+    font-size: 56px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'ikeabold';
+}
+
+/* video */
+.vids{
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.vid{
+    border-radius: 15px;
+}
+
+.video-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.video-container:hover .video-ov{
+        width: 550px;
+}
+
+.video-ov{
+    position: absolute;
+    bottom: 0;
+    left: 170px;
+    right: 0;
+    width: 0;
+    height: 100%;
+    transition: 0.1s ease;
+}
+
+.vid-text{
+    font-family: 'ikeafont';
+    color: white;
+    white-space: nowrap;
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    transform: translate(-70%, -50%);
+}
+
+#why{
+    font-size: 18px;
+    color: white;
+    font-family: 'ikeafont';
+    justify-content: flex-end;
+    position: absolute;
+    top: 5px;
+}
+
+#why2{
+    font-size: 56px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'ikeabold';
+}
+
+/* bottom */
+
+.wip{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 25px;
+    background-color: #023298;
+    padding-bottom: 25px;
+}
+
+.end-text{
+    font-family: 'ikeafont';
+    font-size: 20px;
+    color: white;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.linkeroos {
+    font-size: 25px;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.linkeroos > a:hover{
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+#divider{
+    font-size: 24px;
+}
+
+.the-end{
+    font-size: 12px;
+}

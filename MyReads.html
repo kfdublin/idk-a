@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <title>MyReads</title>
+    <link rel = "stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/MyReads/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/MyReads/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/MyReads/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.css" rel="stylesheet">
+    <div class = "nav">
+        <div class = "mob">
+            <div class = "logo">
+                MyReads
+            </div>
+            <div class = "navlinks">
+                <span class = "link"><a href = "#">Home</a></span>
+                <span class = "link"><a href = "#">My Books</a></span>
+                <span class = "link"><a href = "#">Browse</a></span>
+                <span class = "link"><a href = "#">Community</a></span>
+            </div>
+        </div>
+        <div class = "search_bar">
+            <div class="header-search-container">
+                <span class = "search"><input class="search search-input" placeholder= " search for a book title"/></span>
+                <span class = "search"><a href = "#"><i class="fas fa-search search"></i></a></span>
+            </div>
+        </div>
+    </div>
+</head>
+<body>
+<div class = "body">
+    <div class = "genre"><b>Non-Fiction</b></div><br>
+    <div class= "books">
+        <div class = "book">
+            <div class = "media">
+                <img class = "cover" src = "https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/MyReads/sample-book-photo-1.png"><br>
+                <div class= "button"><button>Add to Library</button></div>
+            </div>
+            <div class = "text"><h3>The Light We Carry</h3><br>
+            <h4>Michelle Obama</h4><br>
+            When they go low, you write another book. In an inspiring follow-up to her bestselling memoir Becoming, the former First Lady of the United States shares practical wisdom and powerful strategies for staying hopeful and balanced through difficult times.
+            </div>
+        </div>
+        <div class = "book">
+            <div class = "media">
+            <img class = "cover" src = "https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/MyReads/sample-book-photo-2.png"><br>
+            <div class = "button"><button>Add to Library</button></div>
+            </div>
+            <div class = "text"><h3>Visual Thinking</h3><br>
+                <h4>Temple Grandin</h4><br>
+            Twenty-five years ago, author and educator Temple Grandin changed mainstream understanding of autism with her memoir, Thinking in Pictures. Her new book expands on the theme, celebrating visual/spatial cognition, intuitive design, and the critical importance of those who think differently. In fact, Grandin argues persuasively that today's problems require neurodiverse thinking.
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+<foot>
+    <div class = "footer">
+        <div class = "company">
+            <span><h3>COMPANY</h3></span>
+            <div class="footlink">
+                <span id = "bot"><a href = "#">About Us</a></span>
+                <span id = "bot"><a href = "#">Terms of Use</a></span>
+                <span id = "bot"><a href = "#">Privacy</a></span>
+            </div>
+        </div>
+        <div class = "connect">
+            <span><h3>CONNECT</h3></span>
+            <div class = "footlink">
+                <a href = "#"><i class="fas fa-phone"></a></i>
+                <a href = "#"><i class="fas fa-mobile-alt"></a></i>
+                <a href = "#"><i class="fas fa-envelope"></a></i>
+                <a href = "#"><i class="fas fa-rss"></a></i>
+                <a href = "#"><i class="fas fa-walking"></a></i>
+            </div>
+            </div>
+        </div>
+    </div>
+</foot>
